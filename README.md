@@ -75,9 +75,11 @@ $OUTPUT_ENV_PATH/bin/pip install torchmetrics
 $OUTPUT_ENV_PATH/bin/pip install pygraphviz --global-option=build_ext --global-option="-I$OUTPUT_ENV_PATH/include/" --global-option="-L$OUTPUT_ENV_PATH/lib/"
 ```
 
+Installation time should be relatively standard for deep learning libraries; if existing packages are already cached for use in other environments, installation time should be limited to no more than 15 minutes. If they need to be downloaded from scratch, it may take longer, but should still remain modest.
+
 ## Synthetic Experiment Reproduction Instructions
   1. Follow the instructions above to obtain and pre-process the synthetic data.
-  2. Follow the various `'Reproduction *.ipynb'` notebooks in the `synthetic_experiments` directory.
+  2. Follow the various `'Reproduction *.ipynb'` notebooks in the `synthetic_experiments` directory. These will reproduce all synthetic results reported in the paper, and existing results are already present in the notebooks. Runtime of these may take a long time (e.g., 1 day) but will vary significantly depending on system / hardware variation.
   
 ## Pre-training & Fine-tuning Runs
   1. To run these experiments, first make a directory for your run and add an argument configuration json file in line with `graph_augmented_pt/args.py`
