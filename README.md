@@ -90,3 +90,6 @@ To circumvent this (and for example allow tape to be imported without getting hi
 `/usr/lib/x86_64-linux-gnu/libstdc++.so.6: version 'GLIBCXX_3.4.22'` error, you can run 
 `export LD_LIBRARY_PATH="$OUTPUT_ENV_PATH/lib"` before in the shell before launching
 anything.
+
+# License
+This code is licensed under an MIT license. See [LICENSE.md](https://github.com/mmcdermott/structure_inducing_pre-training/blob/main/LICENSE.md) for more details.
