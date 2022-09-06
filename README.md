@@ -48,7 +48,10 @@ You need to download [this forked repo](https://anonymous.4open.science/r/pretra
 place it in the appropriate dir (see `constants.py` for the dir).
 
 ## Environment Setup
-### Linux Environment Setup
+### Required Hardware
+This code (and the associated environment files) are built for systems with access to a GPU capable of running CUDA 10.1. It is likely that alternative versions of this environment can be produced for CPU only systems, but these would need to be manually investigated. 
+
+### Installing Packages
   1. Navigate to the root directory. Decide where you want to store your output dir: `export
      OUTPUT_ENV_PATH=[INSERT YOUR PATH HERE]`.
   2. Install the base conda environment: `conda env create -f conda.yml -p $OUTPUT_ENV_PATH`
